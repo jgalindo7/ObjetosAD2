@@ -5,7 +5,9 @@
  */
 package interfaz;
 
+import Helper.DenominadorCeroException;
 import Helper.Fraccionario;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -76,7 +78,7 @@ public class Principal extends javax.swing.JFrame {
         jLabel2.setText("=");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 110, -1, -1));
 
-        cmdBorrar.setText("Borrar");
+        cmdBorrar.setText("Limpiar");
         cmdBorrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmdBorrarActionPerformed(evt);
@@ -141,7 +143,8 @@ public class Principal extends javax.swing.JFrame {
         den1 = Integer.parseInt(txtDenominador1.getText());
         num2 = Integer.parseInt(txtNumerador2.getText());
         den2 = Integer.parseInt(txtDenominador2.getText());
-
+        
+        try{
         f1 = new Fraccionario(num1, den1);
         f2 = new Fraccionario(num2, den2);
 
@@ -152,12 +155,18 @@ public class Principal extends javax.swing.JFrame {
             case 1:
                 f3 = f1.resta(f2);
                 break;
+            case 2:
+                f3 = f1.multiplicacion(f2);
+                break;
 
         }
 
         txtNumerador3.setText("" + f3.getNumerador());
         txtDenominador3.setText("" + f3.getDenominador());
-
+        }catch(DenominadorCeroException e){
+            JOptionPane.showMessageDialog(null, e.getMessage(),"Error",JOptionPane.ERROR_MESSAGE);
+            
+        }
 
     }//GEN-LAST:event_cmdCalcularActionPerformed
 
