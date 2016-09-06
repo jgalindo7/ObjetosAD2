@@ -4,12 +4,12 @@
  * and open the template in the editor.
  */
 
-package clases;
+package Helper;
 
 /**
  *
  * @author jgalindo7
  */
-public class Clases {
+public class java {
     
 }

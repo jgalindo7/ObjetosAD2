@@ -28,21 +28,97 @@ public class Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        cmbOperacion = new javax.swing.JComboBox();
+        txtNumerador1 = new javax.swing.JTextField();
+        txtDenominador1 = new javax.swing.JTextField();
+        jSeparator2 = new javax.swing.JSeparator();
+        jLabel2 = new javax.swing.JLabel();
+        cmdCalcular = new javax.swing.JButton();
+        cmdBorrar = new javax.swing.JButton();
+        txtNumerador3 = new javax.swing.JTextField();
+        txtNumerador2 = new javax.swing.JTextField();
+        jSeparator3 = new javax.swing.JSeparator();
+        txtDenominador2 = new javax.swing.JTextField();
+        txtDenominador3 = new javax.swing.JTextField();
+        jSeparator4 = new javax.swing.JSeparator();
+        txtNumerador4 = new javax.swing.JTextField();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
+        jLabel1.setText("Operaciones con Fraccionario");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 360, -1));
+
+        cmbOperacion.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Suma", "Resta", "Multiplicacion", "Division", " " }));
+        jPanel1.add(cmbOperacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, -1, -1));
+        jPanel1.add(txtNumerador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 50, -1));
+
+        txtDenominador1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtDenominador1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(txtDenominador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, 50, -1));
+        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 90, 10));
+
+        jLabel2.setText("=");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 80, -1, -1));
+
+        cmdCalcular.setText("Calcular");
+        jPanel1.add(cmdCalcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 210, -1, -1));
+
+        cmdBorrar.setText("Borrar");
+        jPanel1.add(cmdBorrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 210, -1, -1));
+        jPanel1.add(txtNumerador3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 50, -1));
+        jPanel1.add(txtNumerador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 60, 50, -1));
+        jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 90, 90, 10));
+
+        txtDenominador2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtDenominador2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(txtDenominador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 100, 50, -1));
+
+        txtDenominador3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtDenominador3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(txtDenominador3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 100, 50, -1));
+        jPanel1.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 90, 90, 10));
+        jPanel1.add(txtNumerador4, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 60, 50, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 521, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        pack();
+        setSize(new java.awt.Dimension(537, 339));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtDenominador1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDenominador1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDenominador1ActionPerformed
+
+    private void txtDenominador2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDenominador2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDenominador2ActionPerformed
+
+    private void txtDenominador3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDenominador3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDenominador3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -80,5 +156,21 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox cmbOperacion;
+    private javax.swing.JButton cmdBorrar;
+    private javax.swing.JButton cmdCalcular;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSeparator jSeparator4;
+    private javax.swing.JTextField txtDenominador1;
+    private javax.swing.JTextField txtDenominador2;
+    private javax.swing.JTextField txtDenominador3;
+    private javax.swing.JTextField txtNumerador1;
+    private javax.swing.JTextField txtNumerador2;
+    private javax.swing.JTextField txtNumerador3;
+    private javax.swing.JTextField txtNumerador4;
     // End of variables declaration//GEN-END:variables
 }
